@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: chem_7870_final_project
+Version: 0.0.1
+Author-email: Jinyu Wei <jw2884@cornell.edu>
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+   { name = "Jinyu Wei", email = "jw2884@cornell.edu"},
+]
+name = "chem_7870_final_project"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = [
+   "numpy",
+   "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+   "pytest",
+]
+
+[project.scripts]
+diffusivity = "diffusivity.__main__:main"
+calculate   = "diffusivity.calculate:main"
+
+[tool.setuptools.packages.find]
+include = ["diffusivity*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts   = "-v --tb=short"

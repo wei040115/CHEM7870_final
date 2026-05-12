@@ -1,0 +1,3 @@
+[console_scripts]
+calculate = diffusivity.calculate:main
+diffusivity = diffusivity.__main__:main
